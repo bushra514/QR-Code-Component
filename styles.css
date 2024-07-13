@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -8,47 +8,47 @@
 
 body{
     background-color: hsl(212, 45%, 89%);
-    height: 100vh;
-    margin: 0;
-    position: relative;
 }
 
-div .qr-container{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
+}
+
+.qr-container{
+
     background-color: #ffff;
-    max-width: 200px;
-    border-radius: 10px;
+    max-width: 20rem;
+    border-radius: 15px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    
 }
 
-.image{
-    padding: 10px;
-}
-
-.qr-container .image-qr-code{
-    width: 100%;
+.image-qr-code{
+    display: block;
+    max-width: 100%;
     border-radius: 10px;
-
 }
 
 .content{
     color: #000000;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
 }
 
 .heading{
-    font-weight: 700;
-    font-size : 15px;
+    font-size : 1.5rem;
 }
 
 .para{
-    font-weight: 400;
-    font-size : 10px;
-    padding: 10px;
+    font-size : 15px;
     color: grey;
 
 }
